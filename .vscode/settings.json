@@ -1,0 +1,9 @@
+{
+    "livePreview.debugOnExternalPreview": false,
+    "livePreview.autoRefreshPreview": "On All Changes in Editor",
+    "livePreview.showServerStatusNotifications": false,
+    "liveServer.settings.CustomBrowser": "chrome",
+    "liveServer.settings.https": {
+        "enable": true
+    }
+}
