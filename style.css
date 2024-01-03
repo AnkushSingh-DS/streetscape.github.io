@@ -1013,25 +1013,71 @@ footer .copyright{
     padding-top: 100px;
 }
 
-/* Add this CSS at the end of your existing styles */
-
-/* Default styles for larger screens */
+/* Base Styles */
 body {
-    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-/* Example media query for small screens (up to 767px) */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Navigation Styles */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+
+.menu {
+    display: none; /* Hide menu by default on larger screens */
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+/* Hamburger Menu for Small Screens */
+.hamburger {
+    display: block; /* Show hamburger menu on small screens */
+}
+
+/* Main Content Styles */
+.main {
+    padding: 20px;
+}
+
+/* Responsive Styles for Small Screens */
 @media only screen and (max-width: 767px) {
-    /* Add your responsive styles here */
-    body {
-        font-size: 14px; /* Adjust font size for smaller screens */
+    .container {
+        width: 90%; /* Adjust width for smaller screens */
     }
 
-    /* You may need to modify other styles to fit smaller screens */
-    .main, .main2 {
-        padding: 10px; /* Adjust padding for smaller screens */
+    .menu {
+        display: block; /* Show menu on small screens */
     }
 
-    /* ... add more styles as needed ... */
+    .menu ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+
+    /* Additional responsive styles as needed */
 }
-
