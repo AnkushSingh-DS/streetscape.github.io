@@ -1020,10 +1020,18 @@ body {
     font-size: 16px;
 }
 
-/* Adjust styles for screens up to 414px (iPhone 12 Pro Max width) */
-@media only screen and (max-width: 414px) {
+/* Example media query for small screens (up to 767px) */
+@media only screen and (max-width: 767px) {
+    /* Add your responsive styles here */
     body {
-        font-size: 14px;
+        font-size: 14px; /* Adjust font size for smaller screens */
     }
-    /* Add more specific styles for other elements as needed */
+
+    /* You may need to modify other styles to fit smaller screens */
+    .main, .main2 {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    /* ... add more styles as needed ... */
 }
+
