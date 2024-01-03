@@ -1051,46 +1051,10 @@ footer .copyright{
     }
 }
 
-@media only screen and (max-width: 480px) {
-    /* Further adjustments for screens smaller than 480px */
-
-    .icon h2 {
-        font-size: 24px;
+@media only screen and (max-width: 600px) {
+    /* Styles for screens 600px and below */
+    body {
+        font-size: 14px; /* Adjust font size for smaller screens */
     }
-
-    #about-head h2 {
-        font-size: 22px;
-    }
-
-    #about-app h1 {
-        font-size: 20px;
-    }
-
-    #newsletter h4,
-    #newsletter p {
-        font-size: 16px;
-    }
-
-    #newsletter input,
-    #newsletter button {
-        width: 100%;
-    }
-
-    footer h2.logo {
-        font-size: 28px;
-    }
-
-    footer h4,
-    footer p,
-    footer a {
-        font-size: 14px;
-    }
-
-    .col.install p1 {
-        font-size: 14px;
-    }
-
-    .copyright p {
-        font-size: 12px;
-    }
+    /* Add more specific styles for other elements as needed */
 }
