@@ -1013,5 +1013,72 @@ footer .copyright{
     padding-top: 100px;
 }
 
+/* Add this at the end of your existing CSS */
+
+@media only screen and (max-width: 768px) {
+  /* Adjustments for smaller screens */
+
+  .navbar {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .menu {
+    padding: 0px 20px;
+  }
+
+  ul {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  ul li {
+    margin: 10px 0;
+  }
+
+  .search {
+    width: 100%;
+    margin: 20px 0 0 0;
+  }
+
+  .form {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .content {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .small-container .row {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .small-container .col-4 {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  #newsletter,
+  footer {
+    padding: 20px;
+  }
+
+  #prodetail {
+    flex-direction: column;
+  }
+
+  #prodetail .single-pro-image,
+  #prodetail .single-product-detail {
+    width: 100%;
+    margin-right: 0;
+    padding-left: 0;
+  }
+}
+
+
 
  
