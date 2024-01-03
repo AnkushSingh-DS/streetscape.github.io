@@ -1013,72 +1013,84 @@ footer .copyright{
     padding-top: 100px;
 }
 
-/* Add this at the end of your existing CSS */
+/* Add this CSS at the end of your existing styles */
 
 @media only screen and (max-width: 768px) {
-  /* Adjustments for smaller screens */
+    /* Adjustments for screens smaller than 768px */
 
-  .navbar {
-    width: 100%;
-    padding: 10px;
-  }
+    .nav {
+        flex-direction: column;
+    }
 
-  .menu {
-    padding: 0px 20px;
-  }
+    .menu {
+        padding: 0;
+    }
 
-  ul {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
+    ul {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 
-  ul li {
-    margin: 10px 0;
-  }
+    .search {
+        margin-top: 20px;
+        text-align: center;
+    }
 
-  .search {
-    width: 100%;
-    margin: 20px 0 0 0;
-  }
+    .form2 {
+        width: 100%;
+        margin-top: 20px;
+    }
 
-  .form {
-    width: 100%;
-    margin-left: 0;
-  }
+    #about-head img {
+        width: 100%;
+    }
 
-  .content {
-    width: 100%;
-    margin-left: 0;
-  }
-
-  .small-container .row {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  .small-container .col-4 {
-    width: 100%;
-    margin: 10px 0;
-  }
-
-  #newsletter,
-  footer {
-    padding: 20px;
-  }
-
-  #prodetail {
-    flex-direction: column;
-  }
-
-  #prodetail .single-pro-image,
-  #prodetail .single-product-detail {
-    width: 100%;
-    margin-right: 0;
-    padding-left: 0;
-  }
+    #about-app .video {
+        width: 100%;
+    }
 }
 
+@media only screen and (max-width: 480px) {
+    /* Further adjustments for screens smaller than 480px */
 
+    .icon h2 {
+        font-size: 24px;
+    }
 
- 
+    #about-head h2 {
+        font-size: 22px;
+    }
+
+    #about-app h1 {
+        font-size: 20px;
+    }
+
+    #newsletter h4,
+    #newsletter p {
+        font-size: 16px;
+    }
+
+    #newsletter input,
+    #newsletter button {
+        width: 100%;
+    }
+
+    footer h2.logo {
+        font-size: 28px;
+    }
+
+    footer h4,
+    footer p,
+    footer a {
+        font-size: 14px;
+    }
+
+    .col.install p1 {
+        font-size: 14px;
+    }
+
+    .copyright p {
+        font-size: 12px;
+    }
+}
